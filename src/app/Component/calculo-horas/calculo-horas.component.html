@@ -2,27 +2,27 @@
     <div class="row">
         <br>
         <div class="col-md-8">
-            <h3>CALCULO DE HORAS</h3>
-            <form name="form" (ngSubmit)="onCreate(f)" #f="ngForm" novalidate>
+            <h2>Calculo de Horas de Trabajo</h2>
+            <form name="form" (ngSubmit)="onCreate()" #f="ngForm" novalidate>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Identificacion del Tecnico"
-                                [(ngModel)]="form.idTecnico" name="idTecnico" required>
+                            name="idTecnico"  required>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
-                            <input type="number" class="form-control" placeholder="Numero de Semana del Año"
-                                [(ngModel)]="form.numSemana" name="numSemana" required>
+                            <input type="text" class="form-control" placeholder="Numero de Semana"
+                            name="numSemana"  required>
                         </div>
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                </div>
+               
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg" >Enviar</button>
+            </div>
             </form>
-        </div>
-    </div>
+  </div>
+</div>
 </div>

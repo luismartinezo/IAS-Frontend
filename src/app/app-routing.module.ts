@@ -6,7 +6,6 @@ import { ReporteServicioComponent } from './Component/reporte-servicio/reporte-s
 
 const routes: Routes = [
 
-  {path: '',component: HomeComponent},
   {path: 'home',component: HomeComponent},
   {path: 'reporteServicio',component: ReporteServicioComponent},
   {path: 'calculoHoras',component: CalculoHorasComponent},

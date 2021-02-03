@@ -1,54 +1,46 @@
 <div class="container">
     <div class="row">
-        <br />
+        <br>
         <div class="col-md-8">
             <h3>Reportar Servicio</h3>
-            <form name="form" (ngSubmit)="onCreate(f)" #f="ngForm" novalidate>
+            <form name="form" (ngSubmit)="onCreate()" #f="ngForm" novalidate>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Identificacion del Tecnico"
-                                [(ngModel)]="form.idTecnico" name="idTecnico" required />
+                            name="idTecnico"  required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Identificacion del Servicio"
-                                [(ngModel)]="form.idServicio" name="idServicio" required />
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre del Servicio"
-                                [(ngModel)]="form.nombre" name="nombre" required />
+                            name="idServicio"  required>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <input type="date" class="form-control" name="fechaInicio"
-                                [(ngModel)]="form.fechaInicio" required />
+                            <input type="date" class="form-control" name="fechaIni"  required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <input type="date" class="form-control" name="fechaFin"
-                                [(ngModel)]="form.fechaFin" required />
+                            <input type="date" class="form-control"  name="fechaFin"  required>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group">
-                        <textarea name="comentServicio" cols="70" rows="10" [(ngModel)]="form.descripcion"
-                            placeholder="Descripcion sobre el Servicio">
-            </textarea>
+                        <textarea name="comentServicio" cols="70" rows="10" 
+                        ngModel placeholder="Comentario sobre el Servicio">
+                        </textarea>
                     </div>
                 </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg" >Enviar</button>
+            </div>
             </form>
-        </div>
-    </div>
+  </div>
+</div>
 </div>
